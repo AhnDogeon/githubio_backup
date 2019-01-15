@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Learn HTML</title>
+        <style>
+            table, tr, td {
+                border: 1px solid darkgray;
+            }
+        
+        </style>
+    </head>
+
+    <body>
+        <h1>프로그래밍 교육</h1>
+        <a href="https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%B4%EC%8D%AC" target="_blank">
+            <img src="./images/python.png" alt="python" width="50px" height="50px">
+        </a>
+        <a href="https://ko.wikipedia.org/wiki/HTML5" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/220px-HTML5_logo_and_wordmark.svg.png" alt="html5" width="50px" height="50px">
+            <hr />
+        </a>
+        <section>
+            <h2>
+                <a href="https://docs.python.org" target="_blank">
+                    Python
+                </a>
+            </h2>
+            <h3>Number Type</h3>
+            <p>파이썬에서 숫자형은 아래와 같다</p>
+            <ol>
+                <li>int</li>
+                <li>float</li>
+                <li>complex</li>
+                <li>str</li>
+            </ol>
+
+            <h3>Sequence</h3>
+            <p>파이썬에서 시퀀스는 아래와 같다</p>
+            <strong>시퀀스는 for문을 돌릴 수 있다!</strong>
+            <ol>
+                <li>str</li>
+                <li>lits</li>
+                <li>tuple</li>
+                <li>range</li>
+            </ol>
+        </section>
+        <section>
+            <h2>
+                <a href="https://developer.mozilla.org" target="_blank">
+                    Web
+                </a>
+            </h2>
+            
+            <h3>Basic</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </section>
+        <iframe width="800" height="760" src="https://www.youtube.com/embed/_hsrsmwHv0A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <table>
+            <thead>
+                <td>점심메뉴</td>
+            </thead>
+            <tr>
+                <th></th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+
+            </tr>
+            <tr>
+                <td>특식</td>
+                <td>초밥</td>
+                <td>바베큐</td>
+                <td>삼겹살</td>
+            </tr>
+            <tr>
+                <td>한식</td>
+                <td>육개장</td>
+                <td>미역국</td>
+                <td>삼계탕</td>
+            </tr>
+        </table>
+
+        <hr>
+        <h3>TimeTable</h3>
+        <table>
+            <tr>
+                <th>TIME</th>
+                <th>INDOOR</th>
+                <th colspan="2">OUTDOOR</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>소극장</td>
+                <td>잔디마당</td>
+                <td>대공연장</td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td rowspan="2">안녕하신가영</td>
+                <td></td>
+                <td>10cm</td>
+            </tr>
+            <tr>
+                <td>13:00</td>
+                <td rowspan="2">선우정아</td>
+                <td rowspan="2">참깨와 솜사탕</td>
+            </tr>
+            <tr>
+                <td>15:00</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>17:00</td>
+                <td rowspan="2">크러쉬</td>
+                <td></td>
+                <td rowspan="2">폴킴</td>
+            </tr>
+        </table>
+        <h3>Form</h3>
+        <p>자기소개하기</p>
+        <form action="./index.html">
+            <div>
+            이름: <input name="name" type="text" placeholder="이름을 입력해라!" />
+            </div>
+            <div>
+            나이: <input name="age" type="number" />
+            </div>
+            <div>
+            phone: <input name="phone" type="text" />
+            </div>
+            <div>
+            자기소개: <textarea name="intro"></textarea>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+        <p>주문서를 작성해 주세요</p>
+        <form action="./index.html">
+            <div>
+                이름: <input type="text" name="name" value="ssafy" autofocus>
+            </div>
+            <div>
+                날짜: <input type="date" name="date">
+            </div>
+                <p><strong>1. 샌드위치 선택</strong></p>
+                <!-- radio라는 거 검색하기 : 하나만 선택 가능한 것--> 
+                <div>
+                    <input type="radio" name="sandwich" value="1">스테이크
+                    <input type="radio" name="sandwich" value="2">터키 아보카도
+                    <input type="radio" name="sandwich" value="3">미트볼
+                </div>
+
+                <p><strong>2. 사이즈 선택</strong></p>
+                <div>
+                    <!-- number 검색 -->
+                사이즈: <input name="size" type="number" min="15" max="30" step="15" value="15"/>
+                </div>
+                <p><strong>3. 빵</strong></p>
+                <!-- option 검색 -->
+                <div>
+                <select name="bread">
+                    <option value="1">허니오트</option>
+                    <option value="2">플랫브래드</option>
+                    <option value="3">하티 이탈리안</option>
+
+                </select>
+                </div>
+                <p><strong>4. 소스</strong></p>
+                <!-- 체크박스 : 중복선택이 가능-->
+                <div>
+                <input type="checkbox" name="option" value="1"> 핫 칠리
+                <input type="checkbox" name="option" value="2"> 스위트 칠리
+                <input type="checkbox" name="option" value="3"> 랜치
+                <input type="checkbox" name="option" value="4"> 홀스 래디쉬
+                <input type="checkbox" name="option" value="5"> 스위트 어니언
+                </div>
+                <!-- 제출=> Subway! -->
+                <input type="submit" value="Subway!">
+        </form>
+    </body>
+</html>
