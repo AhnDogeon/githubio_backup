@@ -1,0 +1,53 @@
+/* div {
+    border: 1px solid yellow;
+}
+div 태그를 선언 border라는 속성(property) 그 뒤 값 */
+
+a {
+    color: red;
+}
+
+div a {
+    color: green;
+}
+/* div태그를 부모로 둔 a만 컬러 그린 */
+
+.bio-box a {
+    /* 특정 안에 지정하려면 */
+}
+
+/* id값이 exec-bio인 요소를 찾으려면! */
+#exec-bio {
+    background-color: lightblue;
+}
+/* class값 찾으려면 .(점)으로 찾음 */
+.bio-box {
+    border: 1px solid black;
+
+}
+
+/* 아무 a 태그를 잡아서 아무 id를 주고 id로 select하여 배경색 오렌지를 주세요*/
+#link-google {
+    background-color: orange;
+
+}
+
+
+
+/* 모든 .bio-box 클래스를 가진 요소들에게 추가로 아무 class를 주고, 
+방금 만든 그 class로 select하여 배경색 aquz 를 적용하자. */
+
+.box {
+    background-color: aqua;
+}
+
+.alert {
+    background-color: purple;
+}
+
+/* BAD example */
+
+body div#exec-bio.bio-box{
+    color: green;
+}
+/* div인데 아이디가 exec-bio고 클래스가 bio-boxW */
